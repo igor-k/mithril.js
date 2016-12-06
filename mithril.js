@@ -523,6 +523,16 @@
 		index,
 		parentTag
 	) {
+		console.log({
+			data,
+			cached,
+			parentElement,
+			editable,
+			index,
+			parentTag
+		})
+		console.log(editable, $document.activeElement)
+
 		var nodes = cached.nodes
 		if (!editable || editable !== $document.activeElement) {
 			if (data.$trusted) {
